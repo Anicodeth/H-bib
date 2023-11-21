@@ -8,7 +8,127 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/topTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textColor="@color/black">
+            </TextView>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/verseTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Genesis 1:1"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/verseContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="The .. .. .. "
+                        android:textColor="@color/black">
+                    </TextView>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:orientation="horizontal">
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6">
+                <LinearLayout
+                    android:id="@+id/booksList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:text="Genesis">
+
+                    </Button>
+                </LinearLayout>
+
+            </ScrollView>
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                >
+                <LinearLayout
+                    android:id="@+id/chaptersList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:text="12">
+
+                    </Button>
+                </LinearLayout>
+
+            </ScrollView>
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+                <LinearLayout
+                    android:id="@+id/versesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:text="11">
+
+                    </Button>
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/oldButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Old">
+
+            </Button>
+            <Button
+                android:id="@+id/newButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="New">
+
+            </Button>
+
+        </LinearLayout>
         
     </LinearLayout>
 
