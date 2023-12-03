@@ -12,10 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BibleApp"
         tools:targetApi="31">
-        <activity android:name=".MainActivity"
-            android:exported="true">
+        <activity
+            android:name=".ReadingPage"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

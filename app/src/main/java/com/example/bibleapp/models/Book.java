@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Book {
     public String bookName;
-    List<Chapter> chapters;
+    public List<Chapter> chapters;
 
     public Book(String bookName, List<Chapter> chapters) {
         this.bookName = bookName;

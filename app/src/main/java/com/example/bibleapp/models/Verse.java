@@ -1,8 +1,8 @@
 package com.example.bibleapp.models;
 
 public class Verse {
-    String verseNumber;
-    String verseContent;
+    public String verseNumber;
+    public String verseContent;
 
     public Verse(String verseNumber, String verseContent) {
         this.verseNumber = verseNumber;

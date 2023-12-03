@@ -9,37 +9,65 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#ECBD83">
 
-        <TextView
+            <TextView
+                android:padding="5dp"
                 android:id="@+id/topTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Welcome Back"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                android:textStyle="bold">
             </TextView>
         <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp">
+                android:layout_height="200dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Your original ImageView with the background image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bible_wall"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Overlay view -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"/> <!-- Replace #80000000 with the desired color and alpha for the overlay -->
+
+            </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
+                        android:padding="5dp"
                         android:id="@+id/verseTitle"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Genesis 1:1"
-                        android:textColor="@color/black">
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        >
                     </TextView>
 
                     <TextView
+
+                        android:padding="5dp"
                         android:id="@+id/verseContent"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="The .. .. .. "
-                        android:textColor="@color/black">
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        >
                     </TextView>
                 </LinearLayout>
 
@@ -47,23 +75,24 @@
             </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="470dp"
+            android:layout_height="485dp"
             android:orientation="horizontal">
             <ScrollView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6">
+                android:layout_weight="0.8">
                 <LinearLayout
                     android:id="@+id/booksList"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:text="Genesis">
+<!--                    <Button-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="75dp"-->
+<!--                        android:text="Genesis">-->
 
-                    </Button>
+<!--                    </Button>-->
+
                 </LinearLayout>
 
             </ScrollView>
@@ -77,33 +106,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:text="12">
+<!--                    <Button-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="75dp"-->
+<!--                        android:text="12">-->
 
-                    </Button>
+<!--                    </Button>-->
+
                 </LinearLayout>
 
             </ScrollView>
-            <ScrollView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.2">
-                <LinearLayout
-                    android:id="@+id/versesList"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:text="11">
 
-                    </Button>
-                </LinearLayout>
-
-            </ScrollView>
 
 
         </LinearLayout>
@@ -116,7 +129,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="Old">
+                android:text="Old"
+                android:backgroundTint="#80522F"
+                android:textColor="@color/white"
+                >
 
             </Button>
             <Button
@@ -124,7 +140,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="New">
+                android:text="New"
+                android:backgroundTint="#80522F"
+                android:textColor="@color/white"
+
+                >
 
             </Button>
 

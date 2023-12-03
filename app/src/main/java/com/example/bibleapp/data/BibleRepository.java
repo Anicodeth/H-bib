@@ -1,5 +1,6 @@
 package com.example.bibleapp.data;
 
+import com.example.bibleapp.books.Genesis;
 import com.example.bibleapp.models.Bible;
 import com.example.bibleapp.models.Book;
 import com.example.bibleapp.models.Chapter;
@@ -7,6 +8,7 @@ import com.example.bibleapp.models.Verse;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class BibleRepository {
     private static Bible oldTestament;
@@ -27,16 +29,9 @@ public class BibleRepository {
 
     private static Bible createOldTestament() {
         List<Book> oldTestamentBooks = new ArrayList<>();
+        Genesis genesis = new Genesis();
 
-        // Add books, chapters, and verses for the Old Testament as needed
-        // For example:
-        List<Chapter> genesisChapters = new ArrayList<>();
-        List<Verse> genesisVerses = new ArrayList<>();
-        genesisVerses.add(new Verse("1", "In the beginning, God created the heavens and the earth."));
-        genesisChapters.add(new Chapter(1, genesisVerses));
-
-        Book genesisBook = new Book("Genesis", genesisChapters);
-        oldTestamentBooks.add(genesisBook);
+        oldTestamentBooks.add(genesis.getGenesisBook());
 
         // Add more books as needed
 
