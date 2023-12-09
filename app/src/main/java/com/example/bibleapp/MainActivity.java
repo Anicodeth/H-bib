@@ -127,6 +127,10 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     // Handle button click
                     Intent toReadingPage =  new Intent(getApplicationContext(), ReadingPage.class);
+                    //Intent toReadingPage =  new Intent(getApplicationContext(), WebPage.class);
+                    toReadingPage.putExtra("book", 1);
+                    toReadingPage.putExtra("chapter", 1);
+
                     List<String> temp = new ArrayList<>();
                     for (Verse verse : verses) {
                         temp.add(verse.verseContent);
