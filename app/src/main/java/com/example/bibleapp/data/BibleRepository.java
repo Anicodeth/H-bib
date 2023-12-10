@@ -40,6 +40,19 @@ import com.example.bibleapp.books.TIMOTHY1st;
 import com.example.bibleapp.books.TIMOTHY2nd;
 import com.example.bibleapp.books.TITUS;
 import com.example.bibleapp.books.Thessalonians;
+import com.example.bibleapp.books.added.Chronicles2;
+import com.example.bibleapp.books.added.Ezekiel;
+import com.example.bibleapp.books.added.Isaiah;
+import com.example.bibleapp.books.added.Jeremiah;
+import com.example.bibleapp.books.added.Psalms;
+import com.example.bibleapp.books.added.SongofSolomon;
+import com.example.bibleapp.books.added.TheBookofEcclesiastes;
+import com.example.bibleapp.books.added.TheBookofEsther;
+import com.example.bibleapp.books.added.TheBookofEzra;
+import com.example.bibleapp.books.added.TheBookofJob;
+import com.example.bibleapp.books.added.TheBookofNehemiah;
+import com.example.bibleapp.books.added.TheBookofProverbs;
+import com.example.bibleapp.books.added.TheLamentJeremiah;
 import com.example.bibleapp.models.Bible;
 import com.example.bibleapp.models.Book;
 import com.example.bibleapp.models.Chapter;
@@ -82,6 +95,21 @@ public class BibleRepository {
         Kings2 kings2 = new Kings2();
         Chronicles1 chronicles1 = new Chronicles1();
 
+        Chronicles2 chronicles2 = new Chronicles2();
+        TheBookofEzra theBookofEzra = new TheBookofEzra();
+        TheBookofNehemiah theBookofNehemiah = new TheBookofNehemiah();
+        TheBookofEsther theBookofEsther = new TheBookofEsther();
+        TheBookofJob theBookofJob = new TheBookofJob();
+        Psalms psalms = new Psalms();
+        TheBookofProverbs theBookofProverbs = new TheBookofProverbs();
+        TheBookofEcclesiastes theBookofEcclesiastes = new TheBookofEcclesiastes();
+        SongofSolomon songofSolomon = new SongofSolomon();
+        Isaiah isaiah = new Isaiah();
+        Jeremiah jeremiah = new Jeremiah();
+        TheLamentJeremiah theLamentJeremiah = new TheLamentJeremiah();
+        Ezekiel ezekiel = new Ezekiel();
+
+
 
 
         oldTestamentBooks.add(genesis.getGenesisBook());
@@ -97,6 +125,21 @@ public class BibleRepository {
         oldTestamentBooks.add(kings1.getkings1Book());
         oldTestamentBooks.add(kings2.getkings2Book());
         oldTestamentBooks.add(chronicles1.getchronicles1Book());
+
+        oldTestamentBooks.add(chronicles2.getchronicles2Book());
+        oldTestamentBooks.add(theBookofEzra.getTheBookofEzraBook());
+        oldTestamentBooks.add(theBookofNehemiah.getTheBookofNehemiahBook());
+        oldTestamentBooks.add(theBookofEsther.getTheBookofEstherBook());
+        oldTestamentBooks.add(theBookofJob.getTheBookofJobBook());
+        oldTestamentBooks.add(psalms.getPsalmsBook());
+        oldTestamentBooks.add(theBookofProverbs.getTheBookofProverbsBook());
+        oldTestamentBooks.add(theBookofEcclesiastes.getTheBookofEcclesiastes());
+        oldTestamentBooks.add(songofSolomon.getTSongofSolomonBook());
+        oldTestamentBooks.add(isaiah.getIsaiahBook());
+        oldTestamentBooks.add(jeremiah.getJeremiahBook());
+        oldTestamentBooks.add(theLamentJeremiah.getTheLamentJeremiahBook());
+        oldTestamentBooks.add(ezekiel.getEzekielBook());
+
 
 
 
