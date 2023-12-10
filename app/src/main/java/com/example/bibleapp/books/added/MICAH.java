@@ -19,8 +19,8 @@ public class MICAH {
         chapters.add(chapterFive());
         chapters.add(chapterSix());
         chapters.add(chapterSeven());
- 
-        JONAHBook = new Book("ትንቢተ ሚክያስ", chapters);
+
+        MICAHBook = new Book("ትንቢተ ሚክያስ", chapters);
     }
 
     public Book getMICAHBook() {

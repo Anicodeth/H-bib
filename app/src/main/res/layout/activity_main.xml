@@ -13,11 +13,11 @@
         android:background="#ECBD83">
 
             <TextView
-                android:padding="5dp"
+                android:padding="10dp"
                 android:id="@+id/topTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome Back"
+                android:text="እንኳን ደህና መጣችሁ።"
                 android:textColor="@color/black"
                 android:textStyle="bold">
             </TextView>
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:id="@+id/verseTitle"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -60,12 +60,13 @@
 
                     <TextView
 
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:id="@+id/verseContent"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="The .. .. .. "
                         android:textColor="@color/white"
+                        android:justificationMode="inter_word"
                         android:textStyle="bold"
                         >
                     </TextView>
@@ -75,7 +76,7 @@
             </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="485dp"
+            android:layout_height="475dp"
             android:orientation="horizontal">
             <ScrollView
                 android:layout_width="0dp"
@@ -129,7 +130,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="Old"
+                android:text="ብሉይ ኪዳን"
                 android:backgroundTint="#80522F"
                 android:textColor="@color/white"
                 >
@@ -140,7 +141,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="New"
+                android:text="አዲስ ኪዳን"
                 android:backgroundTint="#80522F"
                 android:textColor="@color/white"
 

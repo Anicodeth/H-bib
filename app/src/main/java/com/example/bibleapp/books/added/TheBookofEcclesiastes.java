@@ -28,7 +28,7 @@ public class TheBookofEcclesiastes {
 
         // Add more chapters as needed
 
-        Book TheBookofEcclesiastes  = new Book("መጽሐፈ  መክብብ።", chapters);
+        TheBookofEcclesiastes  = new Book("መጽሐፈ  መክብብ።", chapters);
     }
 
     public Book getTheBookofEcclesiastes() {
