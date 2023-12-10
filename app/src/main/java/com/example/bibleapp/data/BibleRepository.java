@@ -40,10 +40,21 @@ import com.example.bibleapp.books.TIMOTHY1st;
 import com.example.bibleapp.books.TIMOTHY2nd;
 import com.example.bibleapp.books.TITUS;
 import com.example.bibleapp.books.Thessalonians;
+import com.example.bibleapp.books.added.AMOS;
 import com.example.bibleapp.books.added.Chronicles2;
+import com.example.bibleapp.books.added.DANIEL;
 import com.example.bibleapp.books.added.Ezekiel;
+import com.example.bibleapp.books.added.HABAKKUK;
+import com.example.bibleapp.books.added.HAGGAI;
+import com.example.bibleapp.books.added.HOSEA;
 import com.example.bibleapp.books.added.Isaiah;
+import com.example.bibleapp.books.added.JOEL;
+import com.example.bibleapp.books.added.JONAH;
 import com.example.bibleapp.books.added.Jeremiah;
+import com.example.bibleapp.books.added.MALACHI;
+import com.example.bibleapp.books.added.MICAH;
+import com.example.bibleapp.books.added.NAHOM;
+import com.example.bibleapp.books.added.OBADIAH;
 import com.example.bibleapp.books.added.Psalms;
 import com.example.bibleapp.books.added.SongofSolomon;
 import com.example.bibleapp.books.added.TheBookofEcclesiastes;
@@ -53,6 +64,8 @@ import com.example.bibleapp.books.added.TheBookofJob;
 import com.example.bibleapp.books.added.TheBookofNehemiah;
 import com.example.bibleapp.books.added.TheBookofProverbs;
 import com.example.bibleapp.books.added.TheLamentJeremiah;
+import com.example.bibleapp.books.added.ZECHARIAH;
+import com.example.bibleapp.books.added.ZEPHANIAH;
 import com.example.bibleapp.models.Bible;
 import com.example.bibleapp.models.Book;
 import com.example.bibleapp.models.Chapter;
@@ -109,6 +122,21 @@ public class BibleRepository {
         TheLamentJeremiah theLamentJeremiah = new TheLamentJeremiah();
         Ezekiel ezekiel = new Ezekiel();
 
+        DANIEL daniel = new DANIEL();
+        HOSEA hosea = new HOSEA();
+        JOEL joel = new JOEL();
+        AMOS amos = new AMOS();
+        OBADIAH obadiah = new OBADIAH();
+        JONAH jonah = new JONAH();
+        MICAH micah = new MICAH();
+        NAHOM nahom = new NAHOM();
+        HABAKKUK habakkuk = new HABAKKUK();
+        ZEPHANIAH zephaniah = new ZEPHANIAH();
+        HAGGAI haggai = new HAGGAI();
+        ZECHARIAH zechariah = new ZECHARIAH();
+        MALACHI malachi = new MALACHI();
+
+
 
 
 
@@ -139,6 +167,21 @@ public class BibleRepository {
         oldTestamentBooks.add(jeremiah.getJeremiahBook());
         oldTestamentBooks.add(theLamentJeremiah.getTheLamentJeremiahBook());
         oldTestamentBooks.add(ezekiel.getEzekielBook());
+
+        oldTestamentBooks.add(daniel.getDANIELBook());
+        oldTestamentBooks.add(hosea.getHOSEABook());
+        oldTestamentBooks.add(joel.getJOELBook());
+        oldTestamentBooks.add(amos.getAMOSBook());
+        oldTestamentBooks.add(obadiah.getOBADIAHBook());
+        oldTestamentBooks.add(jonah.getJONAHBook());
+        oldTestamentBooks.add(micah.getMICAHBook());
+        oldTestamentBooks.add(nahom.getNAHOMBook());
+        oldTestamentBooks.add(habakkuk.getHABAKKUKBook());
+        oldTestamentBooks.add(zephaniah.getZEPHANIAHBook());
+        oldTestamentBooks.add(haggai.getHAGGAIBook());
+        oldTestamentBooks.add(zechariah.getZECHARIAHBook());
+        oldTestamentBooks.add(malachi.getMALACHIBook());
+
 
 
 
