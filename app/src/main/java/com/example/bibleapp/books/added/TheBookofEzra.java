@@ -25,7 +25,7 @@ public class TheBookofEzra {
 
 
 
-        TheBookofEzraBook = new Book("መጽሐፈ ዜና መዋዕል ካልዕ።", chapters);
+        TheBookofEzraBook = new Book("መጽሐፈ ዕዝራ።", chapters);
     }
 
     public Book getTheBookofEzraBook() {

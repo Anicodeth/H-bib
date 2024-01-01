@@ -182,21 +182,6 @@ public class BibleRepository {
         oldTestamentBooks.add(zechariah.getZECHARIAHBook());
         oldTestamentBooks.add(malachi.getMALACHIBook());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // Add more books as needed
-
         return new Bible(oldTestamentBooks);
     }
 

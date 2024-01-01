@@ -51,7 +51,33 @@ public class Isaiah {
         chapters.add(chapterThirtySeven());
         chapters.add(chapterThirtyEight());
         chapters.add(chapterThirtyNine());
-
+        chapters.add(chapterFourty());
+        chapters.add(chapterFourtyOne());
+        chapters.add(chapterFourtyTwo());
+        chapters.add(chapterFourtyThree());
+        chapters.add(chapterFourtyFour());
+        chapters.add(chapterFourtyFive());
+        chapters.add(chapterFourtySix());
+        chapters.add(chapterFourtySeven());
+        chapters.add(chapterFourtyEight());
+        chapters.add(chapterFourtyNine());
+        chapters.add(chapterFifty());
+        chapters.add(chapterFiftyOne());
+        chapters.add(chapterFiftyTwo());
+        chapters.add(chapterFiftyThree());
+        chapters.add(chapterFiftyFour());
+        chapters.add(chapterFiftyFive());
+        chapters.add(chapterFiftySix());
+        chapters.add(chapterFiftySeven());
+        chapters.add(chapterFiftyEight());
+        chapters.add(chapterFiftyNine());
+        chapters.add(chaptersixty());
+        chapters.add(chaptersixtyOne());
+        chapters.add(chaptersixtyTwo());
+        chapters.add(chaptersixtyThree());
+        chapters.add(chaptersixtyFour());
+        chapters.add(chaptersixtyFive());
+        chapters.add(chaptersixtySix());
 
 
         IsaiahBook = new Book("ትንቢተ ኢሳይያስ።", chapters);

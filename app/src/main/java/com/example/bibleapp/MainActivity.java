@@ -2,6 +2,8 @@ package com.example.bibleapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,15 +44,12 @@ public class MainActivity extends AppCompatActivity {
         verseTitle = findViewById(R.id.verseTitle);
         verseContent = findViewById(R.id.verseContent);
 
-        dailyVerses.add(new Verse("3", "ዮሐንስ 3:16 |ስለዚህ እምነትና ፍቅር የምንሆን ነው፣ ወደ ዓለም ልጆች እንደአብራም እና እንደማይንቀሳቀስ እንዲሆን ያደርጋል።"));
-        dailyVerses.add(new Verse("4", "ነቢዩ 3:5-6 |ወጥታ እንቀመጣለን በአንደኛው ምልክት፣ ከአንደኛው አንደኛው ማሰሮ እንደአንደኛው ምልክት አልቀረም። ከዚህ በኋላ በአንደኛው እንዲሆን ወደፊት እንደ አንደኛው ምልክት ተመን ይሆናል።"));
-        dailyVerses.add(new Verse("5", "ማቴዎስ 28:19-20 |ወደ መንፈስ እንድ እምነት በአንደኛው እንደ አንደኛው ወጥተን፣ እንቀል፣ እንቀመጣለን፤ ከመንፈሴ ከለን ይሁን፤ የአንደኛውም ይሁን ለማድረግም አትፍሩ እንጂ ከመንፈሴ እንዳንደን ስለ ሆነ ሁሉም በአንደኛው ተመን እንደአንደኛው የሚያደርገን ሁሉ ነው።"));
-        dailyVerses.add(new Verse("6", "ፊሊጰፕይንስ 4:6-7 |ለእኛ ስንዴ አልቆምም፤ ከአንደኛውም የሰው ተስፋ የሚያደርግን ነገር አንበሳ። ስለዚህ እኛ ለመግባት ከመንፈሴ ስለ ሆነ ከአንደኛው እንደ ሆነ የአንደኛው የሚቀመጠው የአምላክ እስከ ሰማይ ድረስ መንገድ ሁሉ ነው።"));
-        dailyVerses.add(new Verse("7", "አይሳነን 41:10 |እንደአንደኛው እንዲንቀጠቀጥ፣ አረንጓዴን እንዲወስድ እና በምሕረቱ ውስጥ እንዲሆን ወደ ዛሬም አንዲሆን በእኛ አንበሳ።"));
-        dailyVerses.add(new Verse("8", "ሮሜ 8:28 |እኛ ለአምላክ የሚያደርገን ስለሚቀመጡ ስለዚህ የምንዛሬ ምንሆን እና በመረጡ ታሪኩ አሉ።"));
-        dailyVerses.add(new Verse("9", "ኤፊሻዊው 2:8-9 |እኛ እናንተ፣ በግምት ስለሚያደርግ እና ይህ አንደኛው እምነት ያለን ሰው ያለ ለአንደኛው ድንበር እናስተንተን ይሰጣል።"));
-        dailyVerses.add(new Verse("10", "ኮሎምቢያዊ 3:23 |የእኛ አባት እና ምነው በምእራፍ እና እንደ መንገድ ይሆናሉ።"));
-        dailyVerses.add(new Verse("11", "ዘጸዋዕት 29:11 |እኔ ወደ አንደኛው አውጥቻለሁ፣ ስለዚህ የዚህ አንደኛው ምን እንደዚህ እንደሆን አድርገን ስለነው።"));
+        dailyVerses.add(new Verse("3", "የዮሐንስ ወንጌል 3:16 |በእርሱ የሚያምን ሁሉ የዘላለም ሕይወት እንዲኖረው እንጂ እንዳይጠፋ እግዚአብሔር አንድያ ልጁን እስኪሰጥ ድረስ ዓለሙን እንዲሁ ወዶአልና።"));
+        dailyVerses.add(new Verse("4", "የማቴዎስ ወንጌል 18:3 |እንዲህም አለ። እውነት እላችኋለሁ፥ ካልተመለሳችሁ እንደ ሕፃናትም ካልሆናችሁ፥ ወደ መንግሥተ ሰማያት ከቶ አትገቡም።\n"));
+        dailyVerses.add(new Verse("5", "የዮሐንስ ወንጌል 3:36 |በልጁ የሚያምን የዘላለም ሕይወት አለው፤ በልጁ የማያምን ግን የእግዚአብሔር ቍጣ በእርሱ ላይ ይኖራል እንጂ ሕይወትን አያይም።"));
+        dailyVerses.add(new Verse("6", "መጽሐፈ ነህምያ። 8:10 |እርሱም። ሂዱ፥ የሰባውንም ብሉ፥ ጣፋጩንም ጠጡ፥ ለእነዚያም ላልተዘጋጀላቸው እድል ፈንታቸውን ስደዱ፤ ዛሬ ለጌታችን የተቀደሰ ቀን ነው፤ የእግዚአብሔርም ደስታ ኃይላችሁ ነውና አትዘኑ አላቸው።"));
+        dailyVerses.add(new Verse("7", "መጽሐፈ ምሳሌ 12:13,17 |የኅጥኣን ፈቃድ የክፉዎች ወጥመድ ናት፤ የጻድቃን ሥር ግን ፍሬን ያፈራል። እውነተኛን ነገር የሚናገር ቅን ነገርን ያወራል፤ የሐሰት ምስክር ግን ተንኰልን ያወራል።"));
+
         int randomNumber = random.nextInt(dailyVerses.size());
 
         verseTitle.setText((dailyVerses.get(randomNumber).verseContent).split("\\|")[0]);
@@ -96,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+     Button lastClickedButton;
+    Button lastChapterButton;
+
     private void createBooksButton(String buttonText, List<Chapter> chapters) {
         // Create a new Button
         Button button = new Button(this);
@@ -108,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         button.setLayoutParams(layoutParams);
         button.setBackgroundResource(R.drawable.button_border);
 
-
         // Set text
         button.setText(buttonText);
 
@@ -120,13 +121,24 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Reset background color of the last clicked button
+                if (lastClickedButton != null) {
+                    lastClickedButton.getBackground().setColorFilter(null);
+                }
+
+                // Change background color to grayish
+                button.getBackground().setColorFilter(Color.parseColor("#CCCCCC"), PorterDuff.Mode.MULTIPLY);
+
+                // Set the current button as the last clicked button
+                lastClickedButton = button;
+
+                // Remove other views and create chapters buttons
                 chapterList.removeAllViews();
-                for( Chapter chapter : chapters){
+                for (Chapter chapter : chapters) {
                     createChaptersButton(String.valueOf(chapter.chapterNumber), chapter.verses);
                 }
             }
-          }
-        );
+        });
     }
     private void createChaptersButton(String buttonText, List<Verse> verses) {
         // Create a new Button
@@ -147,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         // Add the button to your layout (e.g., a LinearLayout)
         chapterList.addView(button);
 
-
+             Button lastClickedButton;
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -156,7 +168,15 @@ public class MainActivity extends AppCompatActivity {
                     //Intent toReadingPage =  new Intent(getApplicationContext(), WebPage.class);
                     toReadingPage.putExtra("book", 1);
                     toReadingPage.putExtra("chapter", 1);
+                    button.getBackground().setColorFilter(Color.parseColor("#CCCCCC"), PorterDuff.Mode.MULTIPLY);
+                    if (lastChapterButton != null) {
+                        lastChapterButton.getBackground().setColorFilter(null);
+                    }
 
+                    // Change background color to grayish
+
+                    // Set the current button as the last clicked button
+                    lastChapterButton = button;
                     List<String> temp = new ArrayList<>();
                     for (Verse verse : verses) {
                         temp.add(verse.verseContent);

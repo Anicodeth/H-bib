@@ -15,6 +15,7 @@ public class JONAH {
         chapters.add(chapterOne());
         chapters.add(chapterTwo());
         chapters.add(chapterThree());
+        chapters.add(chapterFour());
  
         JONAHBook = new Book("ትንቢተ ዮናስ", chapters);
     }

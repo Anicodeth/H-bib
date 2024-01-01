@@ -16,7 +16,39 @@ public class Chronicles2 {
         chapters.add(chapterTwo());
         chapters.add(chapterThree());
         chapters.add(chapterFour());
-        // Add more chapters as needed
+        chapters.add(chapterFive());
+        chapters.add(chapterSix());
+        chapters.add(chapterSeven());
+        chapters.add(chapterEight());
+        chapters.add(chapterNine());
+        chapters.add(chapterTen());
+        chapters.add(chapterEleven());
+        chapters.add(chapterTwelve());
+        chapters.add(chapterThirteen());
+        chapters.add(chapterFourteen());
+        chapters.add(chapterFifteen());
+        chapters.add(chapterSixteen());
+        chapters.add(chapterSeventeen());
+        chapters.add(chapterEighteen());
+        chapters.add(chapterNinteen());
+        chapters.add(chapterTwenty());
+        chapters.add(chapterTwenteyOne());
+        chapters.add(chapterTwentyTwo());
+        chapters.add(chapterTwentyThree());
+        chapters.add(chapterTwentyFour());
+        chapters.add(chapterTwentyFive());
+        chapters.add(chapterTwentySix());
+        chapters.add(chapterTwentySeven());
+        chapters.add(chapterTewentyEight());
+        chapters.add(chapterTwentyNine());
+        chapters.add(chapterThirty());
+        chapters.add(chapterThirtyOne());
+        chapters.add(chapterThirtyTwo());
+        chapters.add(chapterThirtyThree());
+        chapters.add(chapterThirtyFour());
+        chapters.add(chapterThirtyFive());
+        chapters.add(chapterThirtySix());
+
 
         chronicles2Book = new Book("መጽሐፈ ዜና መዋዕል ካልዕ።", chapters);
     }
